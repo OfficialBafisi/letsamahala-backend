@@ -31,15 +31,15 @@ const router = express_1.default();
 utils_1.applyMiddleware(middleware_1.default, router);
 utils_1.applyRoutes(services_1.default, router);
 utils_1.applyMiddleware(errorHandlers_1.default, router);
-// Run server
-const { PORT = 3000 } = process.env;
-// const server = http.createServer(router);
-// router.listen(
-// 	PORT, ()=>{
-// 		console.log(`Server is running at http://localhost:${PORT} ...`)
-// 	});
-router.listen(PORT, () => {
-    console.log(`Listening at port: ${PORT}`);
-});
+// Run server locally
+// const { PORT = 3000} = process.env;
+// // const server = http.createServer(router);
+// // router.listen(
+// // 	PORT, ()=>{
+// // 		console.log(`Server is running at http://localhost:${PORT} ...`)
+// // 	});
+// router.listen(PORT, ()=>{
+// 	console.log(`Listening at port: ${PORT}`)
+// });
 exports.app = firebase.https.onRequest(router);
 //# sourceMappingURL=index.js.map

@@ -24,16 +24,16 @@ applyMiddleware(middleware, router);
 applyRoutes(routes, router)
 applyMiddleware(errorHandlers, router)
 
-// Run server
-const { PORT = 3000} = process.env;
-// const server = http.createServer(router);
+// Run server locally
+// const { PORT = 3000} = process.env;
+// // const server = http.createServer(router);
 
-// router.listen(
-// 	PORT, ()=>{
-// 		console.log(`Server is running at http://localhost:${PORT} ...`)
-// 	});
-router.listen(PORT, ()=>{
-	console.log(`Listening at port: ${PORT}`)
-});
+// // router.listen(
+// // 	PORT, ()=>{
+// // 		console.log(`Server is running at http://localhost:${PORT} ...`)
+// // 	});
+// router.listen(PORT, ()=>{
+// 	console.log(`Listening at port: ${PORT}`)
+// });
 
 export const app = firebase.https.onRequest(router)
