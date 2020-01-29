@@ -1,7 +1,0 @@
-{
-  "firebase": {
-    "projectId": "letsamahala-backend",
-    "databaseURL": "https://letsamahala-backend.firebaseio.com",
-    "storageBucket": "letsamahala-backend.appspot.com"
-  }
-}
