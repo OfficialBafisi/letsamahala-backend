@@ -21,6 +21,8 @@ exports.callNumber = (toNumber, fromNumber) => __awaiter(void 0, void 0, void 0,
         url: 'http://demo.twilio.com/docs/voice.xml',
         to: toNumber,
         from: fromNumber
-    }).then(call => console.log(call.sid));
+    })
+        .then(call => console.log(call.sid))
+        .catch(err => console.log(err));
 });
 //# sourceMappingURL=twilioProvider.js.map

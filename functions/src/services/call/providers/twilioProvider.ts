@@ -11,5 +11,7 @@ export const callNumber = async(toNumber:string, fromNumber: string) => {
 		url: 'http://demo.twilio.com/docs/voice.xml',
 		to: toNumber,
 		from: fromNumber
-	}).then(call => console.log(call.sid))
+	})
+	.then(call => console.log(call.sid))
+	.catch(err=> console.log(err))
 }

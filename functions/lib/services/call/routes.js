@@ -16,8 +16,9 @@ exports.default = [
         method: "get",
         handler: [
             ({ query }, response) => __awaiter(void 0, void 0, void 0, function* () {
-                const result = yield callController_1.callNumber_tw(query.toNumber, query.fromNumber);
+                yield callController_1.callNumber_tw(query.toNumber, query.fromNumber);
                 response.status(200).send('Call Placed');
+                return;
             })
         ]
     }

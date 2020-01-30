@@ -11,6 +11,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const twilioProvider_1 = require("./providers/twilioProvider");
 exports.callNumber_tw = (toNumber, fromNumber) => __awaiter(void 0, void 0, void 0, function* () {
-    return yield twilioProvider_1.callNumber(toNumber, fromNumber);
+    yield twilioProvider_1.callNumber(toNumber, fromNumber);
+    return;
 });
 //# sourceMappingURL=callController.js.map
