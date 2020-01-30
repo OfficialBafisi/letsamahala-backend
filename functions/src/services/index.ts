@@ -1,3 +1,7 @@
 import searchRoutes from "./search/routes"
+import callRoutes from "./call/routes" 
 
-export default [...searchRoutes];
+
+
+
+export default [...callRoutes];
